@@ -1,1 +1,0 @@
-# arataishikawa11.github.io
