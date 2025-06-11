@@ -8,7 +8,7 @@ body, h1, h2, h3, p {
 /* General body styling */
 body {
     background-color: #000a5f;
-    color: #ffffff;
+    color: #F8F9FC;
     line-height: 1.6;
     padding: 20px;
 }
@@ -16,26 +16,34 @@ body {
 /* Header styles */
 header {
     background-color: #4CAF50;
-    color: white;
+    color: #F8F9FC;
     text-align: center;
     padding: 20px 0;
 }
 
 /* Navigation */
 nav {
-    text-align: center;
+    text-align: right;
     margin: 20px 0;
 }
 
 nav a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #1E3765;
     margin: 0 15px;
     font-size: 18px;
 }
 
 nav a:hover {
-    color: #388E3C;
+    color: #1E3765;
+}
+
+li {
+    display: inline;
+}
+
+.active {
+    background-color: #1E3765;
 }
 
 /* Main content */
