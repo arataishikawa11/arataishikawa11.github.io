@@ -23,23 +23,37 @@ header {
 
 /* Navigation */
 nav {
-    text-align: right;
+    text-align: center;
     margin: 20px 0;
+    float: right;
+    list-style-type: none;
 }
 
 nav a {
+    float: center;
+    display: block;
     text-decoration: none;
-    color: #1E3765;
+    color: #F8F9FC;
     margin: 0 15px;
     font-size: 18px;
 }
 
 nav a:hover {
     color: #1E3765;
+    background-color: #fff
 }
 
 li {
-    display: inline;
+    float: left;
+    list-style-type: none;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #4CAF50;
+    padding: 14px 16px;
 }
 
 .active {
