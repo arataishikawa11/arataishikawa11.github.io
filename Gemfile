@@ -6,4 +6,5 @@ gem "rb-fsevent", "0.9.8"
 
 group :jekyll_plugins do
       gem 'jekyll-livereload'
+      gem 'wdm', '>= 0.1.0'
 end
