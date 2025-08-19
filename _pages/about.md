@@ -3,9 +3,10 @@ layout: content
 title: About
 permalink: /about/
 ---
-Hi, I'm Johnny and I live in the Shire. Thanks for visiting my site.
+Hi, I'm Arata and I'm currently a student at the University of California, Berkeley studying Engineering Physics. Thanks for visiting my site.
 
-I program and write about software development when I have the time. More information can be found through <a href="https://www.linkedin.com/" data-network="LinkedIn" data-proofer-ignore>LinkedIn.</a>
+My main research interests broadly involve fluid dynamics, computational physics and biophysics. I'm also interested in GNC (Guidance, Navigation, Controls) systems engineering! Feel free to to reach out to me at arataishikawa@berkeley.edu!
+You can also find me on LinkedIn: <a href="https://www.linkedin.com/arataishikawa" data-network="LinkedIn" data-proofer-ignore>LinkedIn.</a>
 
 ----
 
