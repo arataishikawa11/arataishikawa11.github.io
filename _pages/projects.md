@@ -10,7 +10,9 @@ Here are some projects that I've worked on!
 In this project, I wanted to create a simple program that can draw out the famous Lorenz Attractors that can be visualized from plotting the Lorenz equations, 
 which govern a chaotic system. 
 
-![Lorenz Gif](lorenz.gif)
+![Lorenz Gif](lorenz_vidmaker.mp4)
+
+<IMG SRC = "lorenz_vidmaker.mp4">
 <!--
 - [Cool Project]()
 - [New Project]()
