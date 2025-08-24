@@ -11,6 +11,7 @@ GEM
       io-event (~> 1.11)
       metrics (~> 0.12)
       traces (~> 0.15)
+    base64 (0.3.0)
     bigdecimal (3.2.2)
     colorator (1.1.0)
     console (1.33.0)
@@ -65,6 +66,7 @@ GEM
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    logger (1.7.0)
     mercenary (0.3.6)
     metrics (0.13.0)
     nokogiri (1.18.9-x64-mingw-ucrt)
@@ -105,9 +107,11 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  base64 (~> 0.3.0)
   html-proofer
   jekyll (= 3.6.3)
   jekyll-livereload
+  logger (~> 1.7)
   rake
   rb-fsevent (= 0.9.8)
   wdm (>= 0.1.0)
