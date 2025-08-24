@@ -6,7 +6,6 @@ permalink: /courses/
 
 Here are some of the relevant courses that I've taken (or am currently taking) here at UC Berkeley, alongside some of my personal thoughts/experiences about them (WIP)! As a sidenote, I was pursuing the premed path for the first two years before I decided to switch to a more physics/math/engineering bend.
 
-<section class = "courses">
 | Course Number| Instructor | Course Title|
 |:-------------:|:--------------:|:--------------:|
 | PHYSICS 5A | Shimon Kolkowitz | Introductory Mechanics and Relativity |
@@ -33,7 +32,6 @@ Here are some of the relevant courses that I've taken (or am currently taking) h
 | BIOLOGY 1A | Andrea Gomez/Jennifer Doudna/Karine Gibbs | General Biology Lecture |
 | BIOLOGY 1AL | Lorenzo Lones | General Biology Laboratory |
 | BIOLOGY 1B | Caroline Williams/Charles Marshall/Michal Shuldman | General Biology Lecture and Laboratory |
-</section>
 
 
 
