@@ -12,7 +12,7 @@ You can also find me on LinkedIn: <a href="https://www.linkedin.com/arataishikaw
 
 ## The Website
 This site was made on an [Apple MBP](https://www.apple.com/) powered by [Jekyll](https://jekyllrb.com) on [Github Pages](https://pages.github.com).
-I'd love to hear your feedback on this site and my work.
+I'd love to hear your feedback on this site.
 
 ----
 <!-- 
