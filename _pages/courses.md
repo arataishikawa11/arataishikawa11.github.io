@@ -6,6 +6,8 @@ permalink: /courses/
 
 Here are some of the relevant courses that I've taken (or am currently taking) here at UC Berkeley, alongside some of my personal thoughts/experiences about them (WIP)! As a sidenote, I was pursuing the premed path for the first two years before I decided to switch to a more physics/math/engineering bend.
 
+--- 
+
 | Course Number| Instructor | Course Title|
 |:-------------:|:--------------:|:--------------:|
 | PHYSICS 5A | Shimon Kolkowitz | Introductory Mechanics and Relativity |
@@ -24,7 +26,7 @@ Here are some of the relevant courses that I've taken (or am currently taking) h
 | CS61A | John Denero | The Structure and Interpretation of Computer Programs |
 | STAT 20 | Evan Munro | Introduction to Probability and Statistics |
 | EECS 126 | Preeya Khanna | Probability and Random Processes |
-| MEC ENG 106 | Alexis Kaminsky | 
+| MEC ENG 106 | Alexis Kaminsky | Fluid Mechanics |
 | CHEM 1A | Alexis Shustermann/Eric Neuscamman | General Chemistry |
 | CHEM 1AL | Michelle Dousky | General Chemistry Laboratory |
 | CHEM 3A | Peter Marsden | Chemical Structure and Reactivity |
