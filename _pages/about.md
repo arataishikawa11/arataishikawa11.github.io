@@ -11,13 +11,14 @@ You can also find me on LinkedIn: <a href="https://www.linkedin.com/arataishikaw
 ----
 ## My Journey Thus Far
 
-# High School
+### High School
 Two Software Engineering Interships with Intuit (2022) and Roku (2023). I focused very heavily on AP CS courses during my time in high school. However, I inevitably chose to apply to university for the physical sciences, namely Astrophysics due to being inspired by the book [*Three Body Problem*](https://en.wikipedia.org/wiki/The_Three-Body_Problem_(novel)) by Liu Cixin.
 
-# University
+### University
 Before starting my coursework, I found out about the Engineering Physics major, and so I kept that in the back of my mind, knowing the difficulty in transferring from the College of Letters & Science to College of Engineering. Originally pursuing Astrophysics coursework, I realized very early on that I enjoyed analytical dynamics (especially non-linear dynamics) and so opted to then major in Physics. (Note that the declaration requirements for Physics and Astrophysics are exactly the same). During this time, I was also very interested in space health/space medicine and so I chose to also go down the Premed track and take the required courses necessary to apply to medical school. This was around the time I started my undergraduate research position with the [Yildiz Lab](https://www.yildizlab.org/), led by Professor Yildiz.
 
 As I entered my ~2nd/3rd year, I also became very interested in fluid mechanics, especially turbulent flow. This followed from my interest in Chaos Theory (hooked by the book [*Chaos: Making a New Science*](https://en.wikipedia.org/wiki/Chaos:_Making_a_New_Science) by James Gleick). Realizing that the Physics Department does not have a fluid mechanics course, I then decided to switch to Engineering Physics in an attempt to be able to take coursework in this field. Outside of courses, I also joined the [FLOW Lab](https://flow.berkeley.edu/) led by Projessor Makiharju.
+
 
 ----
 
