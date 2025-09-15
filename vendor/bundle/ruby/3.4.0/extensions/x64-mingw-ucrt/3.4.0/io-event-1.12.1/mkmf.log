@@ -1,0 +1,489 @@
+append_cflags: checking for whether -Wall is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong  -Wall -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -Wno-unknown-pragmas is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall  -Wno-unknown-pragmas -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+append_cflags: checking for whether -std=c99 is accepted as CFLAGS... -------------------- yes
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas  -std=c99 -Werror -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return !!argv[argc];
+8: }
+/* end */
+
+--------------------
+
+have_func: checking for rb_ext_ractor_safe()... -------------------- yes
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_ext_ractor_safe; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for &rb_fiber_transfer()... -------------------- yes
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { const volatile void *volatile p; p = (const volatile void *)&rb_fiber_transfer; return !p; }
+/* end */
+
+--------------------
+
+have_library: checking for -luring... -------------------- no
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340 -luring  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+C:/Ruby34-x64/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find -luring: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: 
+18: int t(void) { ; return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for sys/epoll.h... -------------------- no
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99   -c conftest.c"
+conftest.c:5:10: fatal error: sys/epoll.h: No such file or directory
+    5 | #include <sys/epoll.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/epoll.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/event.h... -------------------- no
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99   -c conftest.c"
+conftest.c:5:10: fatal error: sys/event.h: No such file or directory
+    5 | #include <sys/event.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/event.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/wait.h... -------------------- no
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99   -c conftest.c"
+conftest.c:5:10: fatal error: sys/wait.h: No such file or directory
+    5 | #include <sys/wait.h>
+      |          ^~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/wait.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/eventfd.h... -------------------- no
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99   -c conftest.c"
+conftest.c:5:10: fatal error: sys/eventfd.h: No such file or directory
+    5 | #include <sys/eventfd.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/eventfd.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_io_descriptor()... -------------------- yes
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'rb_io_descriptor' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_descriptor; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_io_descriptor; return !p; }
+/* end */
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void rb_io_descriptor();
+18: int t(void) { rb_io_descriptor(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for &rb_process_status_wait()... -------------------- yes
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { const volatile void *volatile p; p = (const volatile void *)&rb_process_status_wait; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_fiber_current()... -------------------- yes
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_fiber_current; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for &rb_fiber_raise()... -------------------- yes
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { const volatile void *volatile p; p = (const volatile void *)&rb_fiber_raise; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for epoll_pwait2()... -------------------- no
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'epoll_pwait2' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))epoll_pwait2; return !p; }
+      |                                                         ^~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))epoll_pwait2; return !p; }
+/* end */
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+C:/Ruby34-x64/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\iarat\AppData\Local\Temp\ccdFeD3c.o:conftest.c:(.text+0x5): undefined reference to `epoll_pwait2'
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void epoll_pwait2();
+18: int t(void) { epoll_pwait2(); return 0; }
+/* end */
+
+--------------------
+
+have_header: checking for ruby/io/buffer.h... -------------------- yes
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <ruby/io/buffer.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_fiber_scheduler_blocking_operation_extract()... -------------------- no
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+conftest.c: In function 't':
+conftest.c:17:57: error: 'rb_fiber_scheduler_blocking_operation_extract' undeclared (first use in this function)
+   17 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_fiber_scheduler_blocking_operation_extract; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+conftest.c:17:57: note: each undeclared identifier is reported only once for each function it appears in
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_fiber_scheduler_blocking_operation_extract; return !p; }
+/* end */
+
+PATH=".;C:/Ruby34-x64/lib;C:\Ruby34-x64\bin;C:\Ruby34-x64\msys64\ucrt64\bin;C:\Ruby34-x64\msys64\usr\bin;C:\Users\iarat\miniconda3\condabin;C:\Python313\Scripts\;C:\Python313\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Wolfram Research\WolframScript\;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\iarat\AppData\Roaming\Python\Python311\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Program Files\nodejs\;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Ruby34-x64\bin;C:\Users\iarat\AppData\Local\Microsoft\WindowsApps;C:\Users\iarat\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Neovim\bin;C:\Users\iarat\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\iarat\AppData\Roaming\Python\Python311;C:\Users\iarat\pdf-viewers\sioyek;C:\Users\iarat\anaconda3\Lib\site-packages;C:\Users\iarat\.anaconda;C:\Users\iarat\AppData\Roaming\npm;C:\Users\iarat\AppData\Roaming\Python\Python313\Scripts;C:\Program Files (x86)\GnuWin32\bin" ASAN_OPTIONS=detect_leaks=0 "gcc -o conftest.exe -IC:/Ruby34-x64/include/ruby-3.4.0/x64-mingw-ucrt -IC:/Ruby34-x64/include/ruby-3.4.0/ruby/backward -IC:/Ruby34-x64/include/ruby-3.4.0 -I. -D_WIN32_WINNT=0x0600 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fstack-protector-strong -Wall -Wno-unknown-pragmas -std=c99 conftest.c -L. -LC:/Ruby34-x64/lib -L. -pipe -s -fstack-protector-strong -lpthread -Wl,--no-as-needed     -lx64-ucrt-ruby340  -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi -lbcrypt  "
+C:/Ruby34-x64/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/15.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\iarat\AppData\Local\Temp\ccGu6J76.o:conftest.c:(.text+0x5): undefined reference to `rb_fiber_scheduler_blocking_operation_extract'
+collect2.exe: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: #include <winsock2.h>
+ 4: #include <windows.h>
+ 5: 
+ 6: /*top*/
+ 7: extern int t(void);
+ 8: int main(int argc, char **argv)
+ 9: {
+10:   if (argc > 1000000) {
+11:     int (* volatile tp)(void)=(int (*)(void))&t;
+12:     printf("%d", (*tp)());
+13:   }
+14: 
+15:   return !!argv[argc];
+16: }
+17: extern void rb_fiber_scheduler_blocking_operation_extract();
+18: int t(void) { rb_fiber_scheduler_blocking_operation_extract(); return 0; }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+ 1: #ifndef EXTCONF_H
+ 2: #define EXTCONF_H
+ 3: #define HAVE_RB_EXT_RACTOR_SAFE 1
+ 4: #define HAVE__RB_FIBER_TRANSFER 1
+ 5: #define HAVE_RB_IO_DESCRIPTOR 1
+ 6: #define HAVE__RB_PROCESS_STATUS_WAIT 1
+ 7: #define HAVE_RB_FIBER_CURRENT 1
+ 8: #define HAVE__RB_FIBER_RAISE 1
+ 9: #define HAVE_RUBY_IO_BUFFER_H 1
+10: #endif
+/* end */
+

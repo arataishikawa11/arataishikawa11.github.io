@@ -25,7 +25,6 @@ Here are some of the relevant courses that I've taken (or am currently taking) h
 | MATH 104 | Ian Francis | Introduction to Real Analysis |
 | CS61A | John Denero | The Structure and Interpretation of Computer Programs |
 | STAT 20 | Evan Munro | Introduction to Probability and Statistics |
-| EECS 126 | Preeya Khanna | Probability and Random Processes |
 | MEC ENG 106 | Alexis Kaminsky | Fluid Mechanics |
 | CHEM 1A | Alexis Shustermann/Eric Neuscamman | General Chemistry |
 | CHEM 1AL | Michelle Dousky | General Chemistry Laboratory |
