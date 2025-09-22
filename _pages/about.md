@@ -22,6 +22,7 @@ As I entered my ~2nd/3rd year, I also became very interested in fluid mechanics,
 
 ----
 
+
 ## The Website
 This site was made on an [Apple MBP](https://www.apple.com/) powered by [Jekyll](https://jekyllrb.com) on [Github Pages](https://pages.github.com).
 I'd love to hear your feedback on this site.
