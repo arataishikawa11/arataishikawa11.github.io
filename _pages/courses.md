@@ -4,13 +4,13 @@ title: Courses
 permalink: /courses/
 ---
 
-Here are some of the relevant courses that I've taken (or am currently taking) here at UC Berkeley, alongside some of my personal thoughts/experiences about them (WIP)! As a sidenote, I was pursuing the premed path for the first two years before I decided to switch to a more physics/math/engineering bend.
+Here are some of the relevant courses that I've taken (or am currently taking) here at UC Berkeley, alongside some of my personal thoughts/experiences about them (WIP)! 
 
 --- 
 
 | Course Number| Instructor | Course Title|
 |:-------------:|:--------------:|:--------------:|
-| PHYSICS 5A | Shimon Kolkowitz | Introductory Mechanics and Relativity |
+| PHYSICS 5A | Shimon Kolkowitz | <a href="#comment-5A" class="comment-link">Introductory Mechanics and Relativity</a>|
 | PHYSICS 5B | Joseph Orenstein | Introductory Electromagnetism; Waves and Optics |
 | PHYSICS 5C | Ronnie Spitzer | Introductory Thermodynamics and Quantum Mechanics | 
 | PHYSICS 5BL | Daniel Barsky | Introduction to Experimental Physics I |
@@ -36,7 +36,52 @@ Here are some of the relevant courses that I've taken (or am currently taking) h
 
 
 
-
-
 ----
 
+<div id="course-comments" style="display:none; margin-top: 40px;">
+    <h2>Personal Course Notes</h2>
+    <hr>
+    <div id="comment-5A" class="course-note" style="display:none;">
+        <h3 class="note-title">PHYSICS 5A: Introductory Mechanics and Relativity (Kolkowitz)</h3>
+        <p>
+            This was a **fantastic introduction** to mechanics. The course moved quickly but maintained a strong focus on conceptual understanding rather than just computation. Professor Kolkowitz did an excellent job of bringing in modern applications, especially relating relativity concepts to current physics research.
+        </p>
+        <p>
+            *Recommendation:* Focus heavily on the weekly problem sets—they were the real learning tool.
+        </p>
+    </div>
+</div>
+
+<script>
+    // This function ensures the script runs only after the page's HTML structure is fully loaded.
+    document.addEventListener('DOMContentLoaded', function() {
+        const commentLinks = document.querySelectorAll('.comment-link');
+        const commentsContainer = document.getElementById('course-comments');
+        const allNotes = document.querySelectorAll('.course-note');
+
+        commentLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevents the default jump behavior
+
+                // 1. Ensure the overall comments section is visible
+                commentsContainer.style.display = 'block';
+
+                // 2. Hide all existing notes (to clear any previous selection)
+                allNotes.forEach(note => {
+                    note.style.display = 'none';
+                });
+
+                // 3. Get the ID from the link's href (e.g., "#comment-5A" -> "comment-5A")
+                const targetId = this.getAttribute('href').substring(1); 
+                const targetComment = document.getElementById(targetId);
+
+                // 4. Show the specific, relevant comment and smoothly scroll to it
+                if (targetComment) {
+                    targetComment.style.display = 'block';
+                    // Scroll to the *parent container* to ensure the H2 ("Personal Course Notes") is visible
+                    commentsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    });
+</script>
