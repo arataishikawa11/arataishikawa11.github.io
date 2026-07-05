@@ -2,15 +2,14 @@ import Link from "next/link";
 import { site } from "@/content/site";
 
 const currently = [
-  "Replace this with what you're working on right now.",
-  "Add a second line about a current research direction or role.",
-  "A third line — teaching, a collaboration, or a talk you're preparing.",
+  "I'm currently working with Dr. Sacks and Ben Thomas at the Willerson Center for Cardiovascular Modeling and Simulation. (UT Austin)",
+  "I'm also partaking in research under Dr. Wong, Professor Marcus, and Dr. Shankar at the Space Sciences Laboratory. (UC Berkeley)",
 ];
 
 const elsewhere = [
   { label: "Email", href: `mailto:${site.email}` },
   { label: "GitHub", href: site.social.github },
-  { label: "Google Scholar", href: site.social.googleScholar || "#" },
+  // { label: "Google Scholar", href: site.social.googleScholar || "#" },
   { label: "CV", href: "/cv" },
 ].filter((l) => l.href && l.href !== "#");
 
@@ -30,15 +29,10 @@ export default function AboutPage() {
 
       <div className="mt-10 space-y-5 max-w-xl text-[15px] leading-relaxed text-ink-soft">
         <p>
-          Write a short introduction here — two or three sentences on who you
-          are, what you study or build, and what draws you to it. Keep it
-          plain and specific; this paragraph is the first thing a visitor
-          reads.
+          Hi, welcome to my page! I'm Arata and I'm currently a senior at UC Berkeley, majoring in Engineering Physics. 
         </p>
         <p>
-          A second paragraph can cover your background: where you studied,
-          what you worked on before, or the throughline connecting your
-          interests. Replace this placeholder with your own copy.
+          I'm broadly interested in various fields such as computational medicine and modeling, fluid dynamics, and space/planetary science!
         </p>
       </div>
 
