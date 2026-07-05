@@ -3,7 +3,7 @@ export const site = {
   role: "Researcher", // e.g. "PhD Student, Computer Science, XYZ University"
   affiliation: "University of California, Berkeley",
   email: "arataishikawa@berkeley.edu",
-  location: "Berkley, USA",
+  location: "Berkeley, USA",
   social: {
     github: "https://github.com/arataishikawa11",
     // googleScholar: "",

@@ -2,7 +2,7 @@ import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import { education, experience, skills } from "@/content/cv";
 
-function EntryList({ entries }: { entries: { period: string; title: string; place: string; detail?: string }[] }) {
+function EntryList({ entries }: { entries: { period: string; title: string; place: string; PI?: string, detail?: string }[] }) {
   return (
     <ul className="space-y-6">
       {entries.map((entry, i) => (
@@ -16,6 +16,8 @@ function EntryList({ entries }: { entries: { period: string; title: string; plac
             {entry.detail && (
               <p className="mt-1 text-[14px] text-ink-soft leading-relaxed">
                 {entry.detail}
+                <br></br>
+                {entry.PI}
               </p>
             )}
           </div>

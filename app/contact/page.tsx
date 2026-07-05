@@ -6,7 +6,7 @@ const rows = [
   { label: "Email", value: site.email, href: `mailto:${site.email}` },
   { label: "Location", value: site.location },
   { label: "GitHub", value: site.social.github?.replace("https://", ""), href: site.social.github },
-  { label: "Google Scholar", value: site.social.googleScholar ? "Profile" : undefined, href: site.social.googleScholar },
+  // { label: "Google Scholar", value: site.social.googleScholar ? "Profile" : undefined, href: site.social.googleScholar },
   { label: "LinkedIn", value: site.social.linkedin ? "Profile" : undefined, href: site.social.linkedin },
 ].filter((r) => r.value);
 
@@ -16,7 +16,7 @@ export default function ContactPage() {
       <PageHeader
         kicker="Get in touch"
         title="Contact"
-        dek="The fastest way to reach me is email. I try to reply within a few days."
+        dek="The fastest way to reach me is email. Feel free to reach out!"
       />
 
       <dl className="divide-y divide-border max-w-md">
@@ -50,11 +50,11 @@ export default function ContactPage() {
         ))}
       </dl>
 
-      <p className="mt-10 text-sm text-muted max-w-md leading-relaxed">
+      {/* <p className="mt-10 text-sm text-muted max-w-md leading-relaxed">
         Looking for a contact form instead of email? A static site like this
         one can add a working form via a service like Formspree without
         needing a backend — say the word and it can be wired in.
-      </p>
+      </p> */}
     </div>
   );
 }
