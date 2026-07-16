@@ -11,7 +11,7 @@ export default function PublicationsPage() {
       <PageHeader
         kicker="Research"
         title="Publications"
-        dek="Papers, preprints, and other written research output, newest first."
+        dek="IN CONSTRUCTION"
       />
 
       {sorted.length === 0 ? (
