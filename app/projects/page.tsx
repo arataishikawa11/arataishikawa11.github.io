@@ -8,7 +8,7 @@ export default function ProjectsPage() {
       <PageHeader
         kicker="Selected work"
         title="Projects"
-        dek="A curated set of things I've built or led — see Repositories for the full list of public code."
+        dek="Some fun and miscallaneous projects that I've done in the past."
       />
 
       {projects.length === 0 ? (
@@ -39,9 +39,10 @@ export default function ProjectsPage() {
                   {project.period}
                 </span>
               </div>
-              <p className="mt-2 text-[15px] text-ink-soft leading-relaxed max-w-xl">
-                {project.description}
-              </p>
+              <p
+                className="mt-2 text-[15px] text-ink-soft leading-relaxed max-w-xl [&_a]:underline [&_a]:text-ink [&_a:hover]:text-accent"
+                dangerouslySetInnerHTML={{ __html: project.description }}
+              />
               {project.tags.length > 0 && (
                 <div className="mt-3 flex flex-wrap gap-2">
                   {project.tags.map((tag) => (

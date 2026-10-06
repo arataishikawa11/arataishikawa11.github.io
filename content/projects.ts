@@ -7,14 +7,14 @@ export type Project = {
 };
 
 export const projects: Project[] = [
-  // {
-  //   title: "Project One",
-  //   period: "2025 – present",
-  //   description:
-  //     "A short description of the project: what problem it addresses, what you built, and what's notable about the approach.",
-  //   tags: ["Python", "Machine Learning"],
-  //   href: "#",
-  // },
+  {
+    title: "Visualizing Lorenz Attractors",
+    period: "2025",
+    description:
+      "Simple and fun program to visualize Lorenz equations (with pygame)! This came after being inspired by the book <em><a href=https://around.com/chaos/>Chaos</a></em> by <a href=https://around.com/about/>James Gleick</a>, and seeing the beautiful phase space representations of Lorenz equations.",
+    tags: ["Python", "Lorenz Attractors", "Chaos Theory"],
+    href: "#",
+  },
   // {
   //   title: "Project Two",
   //   period: "2024",

@@ -8,13 +8,14 @@ export type Post = {
 
 export const posts: Post[] = [
   {
-    slug: "Introduction",
+    slug: "introduction",
     title: "Hello, world",
     date: "2026-07-16",
     excerpt:
       "A short introduction.",
     body: [
-      "Hi, my name is Arata. I'm someone who has randomly walked around different areas and somehow ended up where I am today!"
+      "Hi, my name is Arata. I entered Berkeley as an Astrophysics student, then pivoted to Physics, then pivoted again and changed colleges to now becoming an Engineering Physics student!",
+      "Right now, I'm very interested in computational methodologies as applied to science (scientific computing)."
       // "This is placeholder body text for your first post. Each entry in content/posts.ts has a body array — one string per paragraph — that renders here.",
       // "Replace this file's contents with your own writing, or wire the blog up to a CMS or MDX pipeline later if you outgrow a plain data file.",
     ],

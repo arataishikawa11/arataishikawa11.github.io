@@ -6,8 +6,13 @@ export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = posts.find((p) => p.slug === params.slug);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug.toLowerCase() === slug.toLowerCase());
   return { title: post ? post.title : "Post not found" };
 }
 
@@ -20,12 +25,13 @@ function formatDate(iso: string) {
   });
 }
 
-export default function BlogPostPage({
+export default async function BlogPostPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const post = posts.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const post = posts.find((p) => p.slug.toLowerCase() === slug.toLowerCase());
   if (!post) notFound();
 
   return (

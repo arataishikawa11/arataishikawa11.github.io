@@ -3,7 +3,7 @@ import { site } from "@/content/site";
 
 const currently = [
   "I'm currently working with Dr. Sacks and Ben Thomas at the Willerson Center for Cardiovascular Modeling and Simulation. (UT Austin)",
-  "I'm also partaking in research under Dr. Wong, Professor Marcus, and Dr. Shankar at the Space Sciences Laboratory. (UC Berkeley)",
+  "I'm also partaking in research under Dr. Wong, Dr. Shankar, and Professor Marcus, at the Space Sciences Laboratory. (UC Berkeley)",
 ];
 
 const elsewhere = [
@@ -29,10 +29,10 @@ export default function AboutPage() {
 
       <div className="mt-10 space-y-5 max-w-xl text-[15px] leading-relaxed text-ink-soft">
         <p>
-          Hi, welcome to my page! I'm Arata and I'm currently a senior at UC Berkeley, majoring in Engineering Physics. 
+          Hi, welcome to my page! I&apos;m Arata and I&apos;m currently a senior at UC Berkeley, majoring in Engineering Physics. 
         </p>
         <p>
-          I'm broadly interested in various fields such as computational medicine and modeling, fluid dynamics, and space/planetary science!
+          I&apos;m broadly interested in various fields such as scientific computing, computational medicine and modeling, fluid dynamics, and space/planetary science!
         </p>
       </div>
 
