@@ -3,6 +3,8 @@ import { Newsreader, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CursorHalo from "@/components/CursorHalo";
+import AntigravityParticles from "@/components/AntigravityParticles";
 
 const newsreader = Newsreader({
   variable: "--font-newsreader",
@@ -38,10 +40,12 @@ export default function RootLayout({
       lang="en"
       className={`${newsreader.variable} ${plexSans.variable} ${plexMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col relative">
+        <AntigravityParticles />
         <Navbar />
-        <main className="flex-1 w-full">{children}</main>
+        <main className="flex-1 w-full relative z-10">{children}</main>
         <Footer />
+        <CursorHalo />
       </body>
     </html>
   );

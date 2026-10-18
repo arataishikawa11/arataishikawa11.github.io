@@ -14,7 +14,7 @@ export default function CoursesPage() {
       <PageHeader
         kicker="Academics"
         title="Courses"
-        dek="A review and ranking of coursework taken so far, evaluated on difficulty, workload, interest, and practical usefulness."
+        dek="A review and ranking of coursework taken so far, evaluated on difficulty, workload, fun/interest, and practical usefulness."
       />
       <CoursesList courses={courses} />
     </div>

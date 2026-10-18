@@ -26,6 +26,6 @@ export const experience: CVEntry[] = [
 ];
 
 export const skills: { category: string; items: string[] }[] = [
-  { category: "Languages", items: ["Python", "TypeScript", "R"] },
+  { category: "Languages", items: ["Python", "MATLAB", "TypeScript", "R"] },
   { category: "Tools", items: ["JAX", "Git", "Linux"] },
 ];

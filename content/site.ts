@@ -1,6 +1,6 @@
 export const site = {
   name: "Arata Ishikawa",
-  role: "Researcher", // e.g. "PhD Student, Computer Science, XYZ University"
+  role: "Undergraduate Student", // e.g. "PhD Student, Computer Science, XYZ University"
   affiliation: "University of California, Berkeley",
   email: "arataishikawa@berkeley.edu",
   location: "Berkeley, USA",

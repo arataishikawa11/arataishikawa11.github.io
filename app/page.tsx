@@ -29,7 +29,7 @@ export default function AboutPage() {
 
       <div className="mt-10 space-y-5 max-w-xl text-[15px] leading-relaxed text-ink-soft">
         <p>
-          Hi, welcome to my page! I&apos;m Arata and I&apos;m currently a senior at UC Berkeley, majoring in Engineering Physics. 
+          Hi, welcome to my page! My name is Arata and I&apos;m currently a senior at UC Berkeley, majoring in Engineering Physics. 
         </p>
         <p>
           I&apos;m broadly interested in various fields such as scientific computing, computational medicine and modeling, fluid dynamics, and space/planetary science!

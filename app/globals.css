@@ -1,21 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  /* Paper & ink */
-  --paper: #faf9f6;
-  --paper-raised: #f3f1ec;
-  --ink: #201f1c;
-  --ink-soft: #4a4844;
-  --muted: #837f76;
+  /* Oceanic Palette: #05060A, #0D1B2A, #1B4965, #62B6CB, #CAE9FF */
+  --paper: #05060A;          /* Deepest black/midnight background */
+  --paper-raised: #0D1B2A;   /* Rich dark navy for cards and raised surfaces */
+  --ink: #CAE9FF;            /* Pale ice blue for high-contrast primary text */
+  --ink-soft: #9bc8e2;       /* Soft sky blue for secondary body text */
+  --muted: #5e8ea6;          /* Muted oceanic blue for captions and metadata */
 
-  /* Accent: deep pine — quiet, academic, not the usual terracotta/neon */
-  --accent: #2f4d3f;
-  --accent-strong: #1f362c;
-  --accent-tint: #e7ede9;
+  /* Accents */
+  --accent: #62B6CB;         /* Pacific teal/cyan for links, active markers & halo */
+  --accent-strong: #CAE9FF;  /* Ice blue on active/hover */
+  --accent-tint: rgba(98, 182, 203, 0.18); /* Translucent cyan for selection */
 
   /* Structure */
-  --border: #ddd9d0;
-  --border-strong: #201f1c;
+  --border: #1B4965;         /* Deep oceanic blue for borders & dividers */
+  --border-strong: #62B6CB;  /* Vibrant teal for emphasized borders */
+
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -72,3 +74,57 @@ textarea:focus-visible {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* ============================================
+   CURSOR HALO
+   iPad-pointer-style translucent circle that
+   replaces the native cursor on fine pointers.
+   ============================================ */
+
+@media (pointer: fine) {
+  body.cursor-halo,
+  body.cursor-halo * {
+    cursor: none;
+  }
+
+  body.cursor-halo input,
+  body.cursor-halo textarea,
+  body.cursor-halo select {
+    cursor: auto;
+  }
+}
+
+.cursor-halo-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--accent);
+  opacity: 0;
+  pointer-events: none;
+  will-change: transform;
+  transition: width 0.18s ease, height 0.18s ease, opacity 0.18s ease;
+}
+
+.cursor-halo-dot.cursor-halo--visible {
+  opacity: 0.35;
+}
+
+.cursor-halo-dot.cursor-halo--big {
+  width: 42px;
+  height: 42px;
+}
+
+.cursor-halo-dot.cursor-halo--visible.cursor-halo--big {
+  opacity: 0.65;
+}
+
+@media (pointer: coarse) {
+  .cursor-halo-dot {
+    display: none;
+  }
+}
+
