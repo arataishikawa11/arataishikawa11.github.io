@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@/content/site";
+import AsciifiedName from "@/components/AsciifiedName";
 
 const currently = [
   "I'm currently working with Dr. Sacks and Ben Thomas at the Willerson Center for Cardiovascular Modeling and Simulation. (UT Austin)",
@@ -20,9 +21,7 @@ export default function AboutPage() {
         About
       </p>
 
-      <h1 className="font-serif text-5xl sm:text-6xl text-ink tracking-tight leading-[1.05]">
-        {site.name}
-      </h1>
+      <AsciifiedName />
       <p className="mt-3 font-serif italic text-lg text-ink-soft">
         {site.role} · {site.affiliation}
       </p>

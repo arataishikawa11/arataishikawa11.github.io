@@ -9,16 +9,49 @@ interface Particle {
   baseY: number;
   vx: number;
   vy: number;
-  radius: number;
+  size: number;
   alpha: number;
+  baseAlpha: number;
   color: string;
   seed: number;
+  char: string;
+  rotation: number;
+  rotationSpeed: number;
 }
 
 const COLORS = [
   "rgba(98, 182, 203,",  // #62B6CB Pacific Teal
   "rgba(202, 233, 255,", // #CAE9FF Ice Blue
   "rgba(27, 73, 101,",   // #1B4965 Slate Navy
+];
+
+// Curated ASCII character palette fitting academic / CS & antigravity aesthetics
+const ASCII_CHARS = [
+  "+",
+  "*",
+  "·",
+  "~",
+  ":",
+  "-",
+  "=",
+  "^",
+  "#",
+  "%",
+  "&",
+  "{",
+  "}",
+  "[",
+  "]",
+  "<",
+  ">",
+  "/",
+  "\\",
+  "|",
+  "0",
+  "1",
+  "x",
+  "o",
+  "_",
 ];
 
 export default function AntigravityParticles() {
@@ -78,8 +111,17 @@ export default function AntigravityParticles() {
       for (let i = 0; i < count; i++) {
         const x = Math.random() * width;
         const y = Math.random() * height;
-        const colorPrefix = COLORS[Math.floor(Math.random() * COLORS.length)];
-        const alpha = 0.35 + Math.random() * 0.45; // 0.35 - 0.80
+        const colorIdx = Math.floor(Math.random() * COLORS.length);
+        const colorPrefix = COLORS[colorIdx];
+
+        // Slate Navy has higher opacity so thin ASCII glyph strokes remain crisp
+        const baseAlpha =
+          colorIdx === 2
+            ? 0.55 + Math.random() * 0.35 // 0.55 - 0.90 for navy
+            : 0.35 + Math.random() * 0.45; // 0.35 - 0.80 for teal & ice blue
+
+        const char = ASCII_CHARS[Math.floor(Math.random() * ASCII_CHARS.length)];
+        const size = Math.floor(10 + Math.random() * 6); // 10px - 15px font size
 
         particles.push({
           x,
@@ -88,10 +130,14 @@ export default function AntigravityParticles() {
           baseY: y,
           vx: (Math.random() - 0.5) * 0.4,
           vy: -(0.25 + Math.random() * 0.45), // Constant gentle upward drift
-          radius: 1.2 + Math.random() * 1.8,  // 1.2px - 3.0px
-          alpha,
+          size,
+          alpha: baseAlpha,
+          baseAlpha,
           color: colorPrefix,
           seed: Math.random() * 1000,
+          char,
+          rotation: (Math.random() - 0.5) * 0.4, // Initial slight tilt
+          rotationSpeed: (Math.random() - 0.5) * 0.006, // Gentle zero-g ambient tumble
         });
       }
     };
@@ -136,7 +182,11 @@ export default function AntigravityParticles() {
         p.x += p.vx + sway;
         p.y += p.vy;
 
+        // Gentle ambient rotation
+        p.rotation += p.rotationSpeed;
+
         // 2. Cursor Antigravity Repulsion & Fluid Wake Field
+        let cursorInfluence = 0;
         if (mouse.active) {
           const dx = p.x - mouse.x;
           const dy = p.y - mouse.y;
@@ -145,6 +195,7 @@ export default function AntigravityParticles() {
           if (dist < REPEL_RADIUS && dist > 0) {
             // Linear falloff for immediate, noticeable response at distance
             const factor = 1 - dist / REPEL_RADIUS;
+            cursorInfluence = factor;
             const force = factor * REPEL_FORCE;
             const angle = Math.atan2(dy, dx);
 
@@ -159,31 +210,44 @@ export default function AntigravityParticles() {
             // Subtle orbital swirl around cursor
             p.vx += -Math.sin(angle) * factor * 0.3;
             p.vy += Math.cos(angle) * factor * 0.3;
+
+            // Fluid torque on interaction
+            p.rotationSpeed += (Math.random() - 0.5) * factor * 0.02;
           }
         }
 
         // 3. Friction / Damping back to ambient drift
         p.vx *= 0.92;
         p.vy = p.vy * 0.92 - 0.025; // re-anchor gentle upward float
+        p.rotationSpeed *= 0.96; // damp angular speed back toward ambient
 
-        // 4. Screen Wrapping
-        if (p.y < -10) {
-          p.y = height + 10;
+        // 4. Screen Wrapping with padding to avoid abrupt character cutoff
+        const padding = 24;
+        if (p.y < -padding) {
+          p.y = height + padding;
           p.x = Math.random() * width;
-        } else if (p.y > height + 10) {
-          p.y = -10;
+          p.char = ASCII_CHARS[Math.floor(Math.random() * ASCII_CHARS.length)];
+        } else if (p.y > height + padding) {
+          p.y = -padding;
+          p.char = ASCII_CHARS[Math.floor(Math.random() * ASCII_CHARS.length)];
         }
-        if (p.x < -10) {
-          p.x = width + 10;
-        } else if (p.x > width + 10) {
-          p.x = -10;
+        if (p.x < -padding) {
+          p.x = width + padding;
+        } else if (p.x > width + padding) {
+          p.x = -padding;
         }
 
-        // 5. Draw Particle with soft radial glow
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = `${p.color} ${p.alpha})`;
-        ctx.fill();
+        // 5. Draw ASCII Character with subtle interaction illumination
+        const drawAlpha = Math.min(1, p.baseAlpha + cursorInfluence * 0.25);
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate(p.rotation);
+        ctx.font = `${p.size}px var(--font-plex-mono), "IBM Plex Mono", Menlo, Monaco, Consolas, monospace`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        ctx.fillStyle = `${p.color} ${drawAlpha})`;
+        ctx.fillText(p.char, 0, 0);
+        ctx.restore();
       }
 
       animId = requestAnimationFrame(render);

@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CursorHalo from "@/components/CursorHalo";
 import AntigravityParticles from "@/components/AntigravityParticles";
+import AsciiCursorTrail from "@/components/AsciiCursorTrail";
 
 const newsreader = Newsreader({
   variable: "--font-newsreader",
@@ -41,7 +42,15 @@ export default function RootLayout({
       className={`${newsreader.variable} ${plexSans.variable} ${plexMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col relative">
+        <div
+          hidden
+          dangerouslySetInnerHTML={{
+            __html:
+              "<!-- ASCII cursor trail & effects powered by asciify.org (https://asciify.org) -->",
+          }}
+        />
         <AntigravityParticles />
+        <AsciiCursorTrail />
         <Navbar />
         <main className="flex-1 w-full relative z-10">{children}</main>
         <Footer />

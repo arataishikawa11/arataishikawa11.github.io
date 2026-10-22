@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { posts } from "@/content/posts";
+import AsciifiedHeading from "@/components/AsciifiedHeading";
 
 export function generateStaticParams() {
   return posts.map((post) => ({ slug: post.slug }));
@@ -43,9 +44,13 @@ export default async function BlogPostPage({
         &larr; All posts
       </Link>
 
-      <h1 className="mt-6 font-serif text-4xl sm:text-5xl text-ink tracking-tight leading-tight">
-        {post.title}
-      </h1>
+      <div className="mt-6">
+        <AsciifiedHeading
+          text={post.title}
+          as="h1"
+          className="font-serif text-4xl sm:text-5xl text-ink tracking-tight leading-tight"
+        />
+      </div>
       <time
         dateTime={post.date}
         className="mt-4 block font-mono text-xs uppercase tracking-wider text-muted"

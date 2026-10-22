@@ -1,3 +1,5 @@
+import AsciifiedHeading from "@/components/AsciifiedHeading";
+
 export default function PageHeader({
   kicker,
   title,
@@ -12,9 +14,11 @@ export default function PageHeader({
       <p className="font-mono text-xs uppercase tracking-[0.15em] text-accent mb-3">
         {kicker}
       </p>
-      <h1 className="font-serif text-4xl sm:text-5xl text-ink tracking-tight">
-        {title}
-      </h1>
+      <AsciifiedHeading
+        text={title}
+        as="h1"
+        className="font-serif text-4xl sm:text-5xl text-ink tracking-tight leading-tight"
+      />
       {dek && (
         <p className="mt-4 text-ink-soft max-w-xl leading-relaxed">{dek}</p>
       )}
