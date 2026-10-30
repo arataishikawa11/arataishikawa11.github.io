@@ -38,6 +38,8 @@ export default function CVPage() {
         />
         <Link
           href="/cv.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="font-mono text-xs uppercase tracking-wider border border-border-strong text-ink px-4 py-2.5 hover:bg-ink hover:text-paper transition-colors shrink-0"
         >
           Download PDF

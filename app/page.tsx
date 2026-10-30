@@ -4,7 +4,7 @@ import AsciifiedName from "@/components/AsciifiedName";
 
 const currently = [
   "I'm currently working with Dr. Sacks and Ben Thomas at the Willerson Center for Cardiovascular Modeling and Simulation. (UT Austin)",
-  "I'm also partaking in research under Dr. Wong, Dr. Shankar, and Professor Marcus, at the Space Sciences Laboratory. (UC Berkeley)",
+  "I'm also partaking in research under Dr. Wong, Dr. Sankar, and Professor Marcus, at the Space Sciences Laboratory. (UC Berkeley)",
 ];
 
 const elsewhere = [

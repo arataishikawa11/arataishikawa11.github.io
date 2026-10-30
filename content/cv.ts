@@ -18,11 +18,18 @@ export const education: CVEntry[] = [
 export const experience: CVEntry[] = [
   {
     period: "2026 – present",
-    title: "Moncrief Research Intern @ Oden Institute for CS&E",
+    title: "Moncrief Research Intern @ Oden Institute for CSEM",
     place: "University of Texas, Austin",
     PI: "PI: Michael S. Sacks",
     detail: "Project: 3D kinematic study of normal and diseased hearts using refined B-splined surface and volumetric mappings.",
   },
+  {
+    period: "2025 - present",
+    title: "Undergraduate Researcher",
+    place: "Space Sciences Laboratory @ University of California, Berkeley",
+    PI: "Team: Dr. Ramanakumar Sankar, Dr. Michael H. Wong",
+    detail: "Project: A hybrid deep-learning and image velocimetry approach to Jupiter feature tracking."
+  }
 ];
 
 export const skills: { category: string; items: string[] }[] = [
